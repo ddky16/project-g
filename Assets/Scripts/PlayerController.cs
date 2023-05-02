@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
     if (result < 100f) result = 100f;
     else if (result >= 500) result = 600f;
 
-    rb.AddForce(Vector3.forward * (result / 100), ForceMode.Impulse);
+    rb.AddForce(Vector3.forward * (result / 10), ForceMode.Impulse);
 
     isPlayerObject = false;
   }
